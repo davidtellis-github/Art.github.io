@@ -1,1 +1,2 @@
-# Simple-Art.github.io
+# Art-portfolio
+Simple Art Portfolio

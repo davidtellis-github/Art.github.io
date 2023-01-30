@@ -1,0 +1,630 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+:root
+{
+    --lightgrey: #EAEDED;
+    --darkgrey: #7F7F7F;
+    --violet: #80a6ff;
+    --darkviolet: #551A8B;
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    background-color: rgb(3, 31, 56);
+    font-family: 'Poppins', sans-serif;
+}
+
+header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 70px;
+    background-color: var(--violet);
+    box-shadow: 0px 2px 2px var(--violet);
+    padding: 16px;
+}
+
+header > .logo
+{
+    color: var(--darkviolet);
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: 'Itim', sans-serif;
+    font-size: 2em;
+    transition: all 0.5s;
+}
+
+header > .logo:hover
+{
+    color: purple;
+    letter-spacing: 2px;
+}
+
+main
+{
+    color:whitesmoke;
+font-family: cursive;
+font-size: larger;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+main > .home
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+    padding: 16px;
+    
+}
+
+main > .home > .container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    max-width: 360px;
+}
+
+main > .home > .container > img
+{
+    width: 100%;
+    max-width: 300px;
+}
+
+main > .home > .container > p
+{
+    font-size: 1em;
+    text-align: center;
+}
+
+main > .home > .gif
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 360px;
+    gap: 16px;
+    padding: 16px;
+}
+
+main > .home > .gif > iframe
+{
+    width: 200px;
+    height: 200px;
+}
+
+main > .home > .gif > a
+{
+    color: var(--darkviolet);
+    letter-spacing: 1px;
+    font-size: 1em;
+    font-family: 'Itim', sans-serif;
+}
+
+main > .gallery
+{
+    /* Foto de Anete Lusina no Pexels */
+    background-image: url(../images/background.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--darkgrey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+main > .gallery > h1
+{
+    background-color: #00000090;
+    color: white;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 8px;
+}
+
+main > .gallery > p
+{
+    background-color: #00000040;
+    color: white;
+    font-size: 0.9em;
+    text-align: center;
+    width: 100%;
+    padding: 8px;
+}
+
+main > .gallery > .container
+{
+    background-color: #00000040;
+    display: flex;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    max-width: calc(100vw - 32px);
+}
+
+main > .gallery > .container > div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: none;
+    scroll-snap-align: start;
+    width: 100%;
+}
+
+main > .gallery > .container > div > img
+{
+    background-color:black;
+    object-fit: cover;
+    width: 100%;
+    max-width: 320px;
+    padding: 16px;
+}
+main > .gallery > .container > div > img:hover{
+    transform:scale(1.2);
+    z-index: 1;
+ 
+}
+
+
+main > .gallery > .container > div > h2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: gray;
+    width: 100%;
+    height: 100%;
+    max-width: 320px;
+    padding: 16px;
+}
+
+main > .gallery > .container > div > p
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-size: 0.9em;
+    width: 100%;
+    min-height: 100px;
+    max-width: 320px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+main > .gallery > .container > div > p > .link
+{
+    color: var(--darkviolet);
+    letter-spacing: 1px;
+    font-size: 1.3em;
+    font-family: 'Itim', sans-serif;
+}
+
+main > .gallery > .rightsReserved
+{
+    background-color: #00000090;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 8px;
+}
+
+main > .gallery > .rightsReserved > .link
+{
+    color: var(--violet);
+    transition: all 0.5s;
+}
+
+main > .gallery > .rightsReserved > .link:hover
+{
+    text-decoration: underline white;
+}
+
+main > .madeBy 
+{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+}
+
+main > .madeBy > .card
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 1080px;
+    width: 100%;
+    gap: 32px;
+    padding: 16px;
+}
+
+main > .madeBy > .card > img
+{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+}
+
+main > .madeBy > .card > .text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 280px;
+    padding: 16px;
+    gap: 8px;
+}
+
+main > .madeBy > .card > .text > h2
+{
+    color: black;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.7em;
+}
+
+main > .madeBy > .card > .text > p
+{
+    color: var(--violet);
+    text-align: center;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+main > .madeBy > .card > .text > .icon
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+main > .madeBy > .card > .text > .icon > a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--lightgrey);
+    background-color: var(--violet);
+    width: 40px;
+    height: 40px;
+    font-size: 1.4em;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+main > .madeBy > .card > .text > .icon > a:hover
+{
+    background-color: var(--lightgrey);
+    color: var(--darkviolet);
+}
+
+main > .madeBy > .card:nth-child(2)
+{
+    flex-direction: row-reverse;
+}
+
+main > .comparison
+{
+    background-color: var(--violet);
+    padding: 16px;
+}
+
+main > .comparison > h1
+{
+    background-color: #00000090;
+    color: white;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 8px;
+}
+
+main > .comparison > p
+{
+    background-color: #00000040;
+    color: white;
+    font-size: 0.9em;
+    text-align: center;
+    width: 100%;
+    padding: 8px;
+}
+
+main > .comparison > .container
+{
+    background-color: #00000040;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+    padding: 0px 16px 16px 16px;
+}
+
+main > .comparison > .container > .box > .imgBox
+{
+    background-color:whitesmoke;
+    position: relative;
+    width: calc(280px - 32px);
+    height: calc(224px - 32px);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 8px;
+    border: 8px solid white;
+    margin: 0 auto;
+}
+
+main > .comparison > .container > .box > .imgBox > textarea
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    resize: none;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+}
+
+main > .comparison > .container > .box > .imgBox > textarea:nth-child(2)
+{
+    min-width: 5%;
+    width: 50%;
+    max-width: 95%;
+    resize: vertical;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right: 4px solid var(--lightgrey);
+    transition: all 1s;
+}
+
+main > .comparison > .container > .box:nth-child(1) > .imgBox > textarea
+{
+    background-image: url(../images/comparison01.jpg);
+}
+
+main > .comparison > .container > .box:nth-child(1) > .imgBox > textarea:nth-child(2)
+{
+    background-image: url(../images/comparison02s.jpg);
+}
+
+main > .comparison > .container > .box:nth-child(2) > .imgBox > textarea
+{
+    background-image: url(../images/comparison03.jpg);
+}
+
+main > .comparison > .container > .box:nth-child(2) > .imgBox > textarea:nth-child(2)
+{
+    background-image: url(../images/comparison04.jpg);
+}
+
+main > .comparison > .container > .box > .btnBox
+{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(280px - 32px);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    gap: 16px;
+    padding: 8px;
+    margin: 0 auto;
+}
+
+main > .comparison > .container > .box > .btnBox > button
+{
+    background-color: white;
+    color: var(--violet);
+    cursor: pointer;
+    font-size: 1.2em;
+    border: none;
+    padding: 4px;
+    transition: all 0.5s;
+}
+
+main > .comparison > .container > .box > .btnBox > button:hover
+{
+    color: var(--darkviolet);
+}
+
+main > .comparison > .rightsReserved
+{
+    background-color: #00000090;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 8px;
+}
+
+main > .comparison > .rightsReserved > .link
+{
+    color: var(--violet);
+    transition: all 0.5s;
+}
+
+main > .comparison > .rightsReserved > .link:hover
+{
+    text-decoration: underline white;
+}
+
+footer
+{
+    background-color:#80a6ff;
+    padding: 16px;
+}
+
+footer > .paragraph
+{
+    color:#551A8B;
+    text-align: center;
+    width: 100%;
+}
+
+footer > .paragraph > .link
+{
+    color: white;
+   
+    transition: all 0.5s;
+}
+
+footer > .paragraph > .link:hover
+{
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width: 768px)
+{
+    main > .home > .gif > iframe
+    {
+        width: 240px;
+        height: 240px;
+    }
+
+    main > .gallery > .container > div
+    {
+        width: calc(100%/2);
+    }
+    
+    main > .madeBy > .card
+    {
+        gap: 64px;
+    }
+
+    main > .madeBy > .card > img
+    {
+        width: calc(220px + 40px);
+        height: calc(220px + 40px);
+    }
+
+    main > .madeBy > .card > .text
+    {
+        font-size: 1.1em;
+        max-width: calc(280px + 40px);
+    }
+
+    main > .comparison > .container
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main > .comparison > .container > .box > .imgBox
+    {
+        width: calc(350px - 32px);
+        height: calc(280px - 32px);
+    }
+    
+    main > .comparison > .container > .box >  .btnBox
+    {
+        width: calc(350px - 32px);
+        gap: 24px;
+    }
+}
+
+@media screen and (min-width: 1080px)
+{
+    main > .home > .gif > iframe
+    {
+        width: 280px;
+        height: 280px;
+    }
+
+    main > .gallery > .container > div
+    {
+        width: calc(100%/3);
+    }
+
+    main > .madeBy > .card
+    {
+        gap: 96px;
+    }
+
+    main > .madeBy > .card > img
+    {
+        width: calc(220px + 80px);
+        height: calc(220px + 80px);
+    }
+
+    main > .madeBy > .card > .text
+    {
+        font-size: 1.2em;
+        max-width: calc(280px + 80px);
+    }
+
+    main > .comparison > .container > .box > .imgBox
+    {
+        width: calc(400px - 32px);
+        height: calc(320px - 32px);
+    }
+    
+    main > .comparison > .container > .box > .btnBox
+    {
+        width: calc(400px - 32px);
+        gap: 32px;
+    }
+}
