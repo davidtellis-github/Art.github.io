@@ -1,8 +1,7 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 :root
 {
     --lightgrey: #EAEDED;
@@ -29,7 +28,7 @@ html
 body
 {
     background-color: rgb(3, 31, 56);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header
@@ -63,7 +62,7 @@ header > .logo:hover
 main
 {
     color:whitesmoke;
-font-family: cursive;
+font-family: 'Montserrat';
 font-size: larger;
     display: grid;
     grid-template-columns: 1fr;
@@ -128,7 +127,7 @@ main > .home > .gif > a
     color: var(--darkviolet);
     letter-spacing: 1px;
     font-size: 1em;
-    font-family: 'Itim', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 main > .gallery
